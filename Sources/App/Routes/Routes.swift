@@ -65,10 +65,8 @@ extension Droplet {
             return response.makeResponse()
         }
 
-        post("joke") { req in
-//            print("Requested")
-//            return "this is a joke"
-            return "{\r\n    \"response_type\": \"ephemeral\",\r\n    \"text\": \"Here are the currently open tickets:\",\r\n    \"attachments\": [\r\n        {\r\n            \"text\": \"#123456 http://domain.com/ticket/123456 \\n\r\n            #123457 http://domain.com/ticket/123457 \\n\r\n            #123458 http://domain.com/ticket/123458 \\n\r\n            #123459 http://domain.com/ticket/123459 \\n\r\n            #123460 http://domain.com/ticket/123460\"\r\n        }\r\n    ]\r\n}"
+        get("joke") { req in
+            return "Q:  What do skeletons say before eating? \nA:  Bone Appetit!"
         }
     }
 }
