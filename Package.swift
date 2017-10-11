@@ -20,7 +20,6 @@ let package = Package(
                     "Resources",
                 ]),
         .target(name: "Run", dependencies: ["App"]),
-        .testTarget(name: "AppTests", dependencies: ["App", "Testing"])
     ]
 )
 
