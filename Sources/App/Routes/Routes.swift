@@ -65,7 +65,7 @@ extension Droplet {
             return response.makeResponse()
         }
 
-        get("joke") { req in
+        post("joke") { req in
             return "Q:  What do skeletons say before eating? \nA:  Bone Appetit!"
         }
     }
